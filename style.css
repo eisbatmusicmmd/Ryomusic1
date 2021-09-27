@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: vazir;
+    src: url(Vazir-Bold.ttf);
+}
+body{
+    height: 100vh;
+    background-image: url(bg.jpg);
+    font-family: vazir;
+}
+a,
+button{
+    font-family: vazir;
+}
+
+.dropdown{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.remix, .album, .takahang{
+    position: relative;
+
+}
+
+.remix ul,
+.takahang ul,
+.album ul{
+    position: absolute;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+
+}
+.remix a,
+.takahang a,
+.album a{
+    color: black;
+    text-decoration: none;
+
+}
+.remix li,
+.takahang li,
+.album li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remix li:hover,.takahang li:hover,.album li:hover{
+    background-color: rgb(64, 131, 187);
+}
+
+.dropdown button,
+.home{
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown button:hover, 
+.home:hover{
+    color: rgb(211, 211, 211);
+}
+
+.remix button:focus + .ulclass1,
+.takahang button:focus + .ulclass3,
+.album button:focus + .ulclass3{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+    
+}
+#searchbox{
+    width: 50%;
+    margin: auto;
+
+}
+#searchbox input{
+    width: 75%;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 18px;
+    padding: 12px;
+    background: transparent;
+    color: white;
+
+}
+#searchbox button{
+    width: 75%;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 13px;
+    padding: 12px;
+    background: transparent;
+    color: white;
+
+}
+#searchbox button{
+    width: 25%;
+    background: #eee;
+    color: white;
+    float: right;
+    border-left: 0px;
+
+}
+.paxsh ul{
+    list-style: none;
+    text-decoration: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.paxsh ul a{
+    padding-left: .001%;
+    text-decoration: none;
+    list-style: none;
+}
+.area{
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+
+}
+.area-rtl1{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 20px;
+    color: blanchedalmond;
+
+}
+.area-rtl2{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 20px;
+    color: blanchedalmond;
+
+}
+.area-rtl3{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 20px;
+    color: blanchedalmond;
+
+}
+.area-rtl1 a{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+    color: blanchedalmond;
+
+}
+.area-rtl2 a{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+    color: blanchedalmond;
+
+}
+.area-rtl3 a{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+    color: blanchedalmond;
+
+}
+.list p{
+    color: blanchedalmond;
+    border:2px solid white;
+    border-radius: 4px;
+    background-color: rgb(179, 178, 178);
+}
+.list{
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.list a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.head img{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(30% , 0%);
+}
+ 
+.post{
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom-left-radius: 35px;
+    position: absolute;
+    text-align: center;
+    transform: translate(40% , 0%);
+}
+.post img{
+    width: 400px;
+    height: 400px;
+}
+.post p{
+    color: white;
+}
+
+.post2{
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom-left-radius: 35px;
+    position: absolute;
+    text-align: center;
+    transform: translate(160% , 0%);
+}
+.post2 img{
+    width: 400px;
+    height: 400px;
+}
+.post2 p{
+    color: white;
+}
+
